@@ -272,8 +272,8 @@
           ]
         },
             "component": "text",
-            "name": "maxFileSizeMessage",
-            "label": "Maximum file size error message",
+            "name": "actionName",
+            "label": "actionName",
             "valueType": "string"
       
       },
