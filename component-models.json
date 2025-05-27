@@ -263,21 +263,35 @@
         "valueType": "string"
       },
       {
-        "condition": {
-          "==": [
-            {
-              "var": "actionType"
-            },
-            "spreadsheet"
-          ]
-        },
-            "component": "text",
-            "name": "actionName",
-            "label": "action Name",
-            "valueType": "string",
-            "value": "spreadsheet"
-      
+  "condition": {
+    "==": [
+      {
+        "var": "actionType"
       },
+      "spreadsheet"
+    ]
+  },
+  "component": "text",
+  "name": "actionName",
+  "label": "action Name",
+  "valueType": "string",
+  "value": {
+    "if": [
+      {
+        ">": [
+          {
+            "len": {
+              "var": "spreadsheetUrl"
+            }
+          },
+          0
+        ]
+      },
+      "spreadsheet",
+      " "
+    ]
+  }
+},
       {
         "component": "container",
         "name": "email",
