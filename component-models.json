@@ -273,7 +273,7 @@
         },
         "component": "text",
         "name": "actionName",
-        "label": "Spreadsheet",
+        "label": "actionName",
         "valueType": "string",
         "value": "spreadsheet"
       },
