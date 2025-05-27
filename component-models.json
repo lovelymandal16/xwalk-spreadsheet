@@ -262,33 +262,7 @@
         "label": "Spreadsheet Url",
         "valueType": "string"
       },
-      {
-        "condition": {
-          "==": [
-            {
-              "var": "actionType"
-            },
-            "spreadsheet"
-          ]
-        },
-        "component": "text",
-        "name": "actionName",
-        "label": "actionName",
-        "valueType": "string",
-        "value": {
-    "condition": {
-    ">": [
-      {
-        "len": {
-          "var": "spreadsheetUrl"
-        }
-      },
-      0
-    ]
-  },
-          "spreadsheet"
-  }
-      },
+      
       {
         "component": "container",
         "name": "email",
