@@ -263,6 +263,20 @@
         "valueType": "string"
       },
       {
+        "condition": {
+          "==": [
+            {
+              "var": "actionType"
+            },
+            "spreadsheet"
+          ]
+        },
+        "component": "text",
+        "name": "actionName",
+        "label": "Spreadsheet",
+        "valueType": "string"
+      },
+      {
         "component": "container",
         "name": "email",
         "label": "Email Configuration",
