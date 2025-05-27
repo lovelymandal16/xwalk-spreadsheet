@@ -276,17 +276,17 @@
         "label": "actionName",
         "valueType": "string",
         "value": {
-    "if": [
+    "condition": {
+    ">": [
       {
-        "==": [
-          {
-            "var": "actionType"
-          },
-          "spreadsheet"
-        ]
+        "len": {
+          "var": "spreadsheetUrl"
+        }
       },
-      "spreadsheet"
+      0
     ]
+  },
+          "spreadsheet"
   }
       },
       {
