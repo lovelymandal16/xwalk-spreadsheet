@@ -262,7 +262,21 @@
         "label": "Spreadsheet Url",
         "valueType": "string"
       },
+      {
+        "condition": {
+          "==": [
+            {
+              "var": "actionType"
+            },
+            "spreadsheet"
+          ]
+        },
+            "component": "text",
+            "name": "maxFileSizeMessage",
+            "label": "Maximum file size error message",
+            "valueType": "string"
       
+      },
       {
         "component": "container",
         "name": "email",
