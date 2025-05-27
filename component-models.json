@@ -274,7 +274,8 @@
         "component": "text",
         "name": "actionName",
         "label": "Spreadsheet",
-        "valueType": "string"
+        "valueType": "string",
+        "value": "spreadsheet"
       },
       {
         "component": "container",
