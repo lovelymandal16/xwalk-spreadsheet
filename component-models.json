@@ -274,7 +274,20 @@
         "component": "text",
         "name": "actionName",
         "label": "actionName",
-        "valueType": "string"
+        "valueType": "string",
+        "value": {
+    "if": [
+      {
+        "==": [
+          {
+            "var": "actionType"
+          },
+          "spreadsheet"
+        ]
+      },
+      "spreadsheet"
+    ]
+  }
       },
       {
         "component": "container",
